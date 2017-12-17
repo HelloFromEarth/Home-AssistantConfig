@@ -84,23 +84,21 @@ updater:
 
 sun:
 
-light:
-  - platform: hue
-    host: 192.168.10.75
-    filename: phue.conf
-    allow_unreachable: true
-    allow_in_emulated_hue: false
-    allow_hue_groups: false
-
-light 2:
-  - platform: hue
-    host: 192.168.10.76
-    filename: phue2.conf
-    allow_unreachable: true
-    allow_in_emulated_hue: false
-    allow_hue_groups: false
+hue:
+  bridges:
+    - host: 192.168.10.75
+      filename: phue.conf
+      allow_unreachable: true
+      allow_in_emulated_hue: false
+      allow_hue_groups: false
+    - host: 192.168.10.76
+      filename: phue2.conf
+      allow_unreachable: true
+      allow_in_emulated_hue: false
+      allow_hue_groups: false
 
 # Reference : https://www.flexfireleds.com/pages/Comparison-between-3528-LEDs-and-5050-LEDs.html
+light:
   - platform: flux_led
     automatic_add: True
     devices:
