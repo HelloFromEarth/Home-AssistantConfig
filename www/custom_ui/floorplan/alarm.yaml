@@ -7,7 +7,6 @@ rules:
     entities:
       - input_boolean.guest_mode
       - input_boolean.good_night
-      - input_boolean.sleepy_dog
       - group.kitchen_lights
       - group.living_room_lights
 
@@ -67,14 +66,6 @@ rules:
         class: 'text-home'
       - state: 'off'
         class: 'text-away'
-
-  - name: Camera
-    entities:
-      - camera.wu_doppler_weather
-      - camera.usps_mail
-    states:
-      - state: 'idle'
-        class: 'text-home'
 
   - name: Family
     entities:
@@ -290,8 +281,5 @@ rules:
   - name: Camera Images
     entities:
       - camera.stone_door
-      - camera.wu_doppler_weather
-      - entity: camera.usps_mail
-        element: camera.usps_mail_image
     image_template: '${entity.attributes.entity_picture}'
     # image_refresh_interval: 20 # in seconds - Future options if needed.

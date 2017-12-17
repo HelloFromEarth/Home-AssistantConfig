@@ -5,6 +5,8 @@ Be sure to :star: my repo so you can keep up to date on the daily progress!
 
 You can also vist my [Blog](http://www.vmwareinfo.com/search/label/iot) for all of my [Home Automation Posts](http://www.vmwareinfo.com/search/label/iot).
 
+You can follow my home's breaking news and tweet statistics via twitter  [BearStoneHA](https://twitter.com/bearstoneha)
+
 ![Screenshot of Home Assistant Header](https://i.imgur.com/vjDH1LJ.png)
 
 This is my Home Assistant Configuration created with the All In One installer [expanded to 16GB.](https://community.home-assistant.io/t/expanding-partition-on-sd-card-for-raspberry-pi-with-noobs-pre-installed/2036)  I update it pretty regularly. :star:
