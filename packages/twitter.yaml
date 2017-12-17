@@ -46,36 +46,14 @@ automation:
             {% set handle = trigger.event.data.value1 %}
             {% set location = trigger.event.data.location %}
             {% set phrases = [
-              "One more follower " ~ handle ~ "! Chirp the Bird from " ~ location ~ "!!",
-              "I have a new follower " ~ handle ~ ", I just sounded a chirp in the house.",
-              "Boom! " ~ handle ~ " follow makes me sound a chirp in the house all the way from " ~ location ~ ".",
-              "If the AMP (http://amzn.to/2j18dlT) is on & I get a new follower " ~ handle ~ ", I sound a chirp!"
+              "Thanks for the Follow " ~ handle ~ "! Chirp the Bird from " ~ location ~ "!!",
+              "I have a new follower (" ~ handle ~ "), I just sounded a chirp in the house.",
+              "Boom! The " ~ handle ~ " follow makes me sound a chirp in the house all the way from " ~ location ~ ".",
+              "If the AMP (http://amzn.to/2j18dlT) is on & I get a new follower like " ~ handle ~ ", I sound a chirp!"
             ] %}
             {% set hashtags = [
               "#ThanksForTheFollow",
               "#MakingitChirp",
               "(http://www.vmwareinfo.com/2017/11/building-digital-cuckoo-clock-with-home.html)"
-            ] %}
-            {{ phrases|random ~ " " ~ hashtags|random }}
-
-
-  - alias: 'New Scale Tweet!'
-    hide_entity: True
-    trigger:
-      - platform: event
-        event_type: withing_scale
-    action:
-      - service: script.tweet_engine
-        data_template:
-          tweet: >-
-            {% set weight = trigger.event.data.weight %}
-            {% set phrases = [
-            "Someone just stepped on the WiThings scale!",
-            "Checking thier weight on the WiThings Scale. (http://amzn.to/2APkINm)",
-            "Even the Scale is connected and someone just stepped on it with " ~ weight ~ " lbs.",
-            "New weight logged on the scale by @CCostan. I will let him disclose the numbers though."
-            ] %}
-            {% set hashtags = [
-              "#Fitness"
             ] %}
             {{ phrases|random ~ " " ~ hashtags|random }}
