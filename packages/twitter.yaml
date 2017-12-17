@@ -57,3 +57,26 @@ automation:
               "(http://www.vmwareinfo.com/2017/11/building-digital-cuckoo-clock-with-home.html)"
             ] %}
             {{ phrases|random ~ " " ~ hashtags|random }}
+
+  - alias: 'Closed Github Issue'
+    hide_entity: True
+    trigger:
+      - platform: event
+        event_type: closed_github
+
+    action:
+      - service: script.tweet_engine
+        data_template:
+          tweet: >-
+            {% set repo = trigger.event.data.repo %}
+            {% set issue = trigger.event.data.issue %}
+            {% set issueurl = trigger.event.data.issueurl %}
+            {% set phrases = [
+              "New Code Alert: " ~ issue ~ "(" ~ issueurl ~ ") on the Repo. (https://github.com/CCOSTAN/Home-AssistantConfig/commits/master) "
+            ] %}
+            {% set hashtags = [
+              "#Github",
+              "#HomeAutomation",
+              "#SmartHomeCode"
+            ] %}
+            {{ phrases|random ~ " " ~ hashtags|random }}
