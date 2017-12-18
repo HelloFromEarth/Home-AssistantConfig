@@ -20,6 +20,28 @@ notify:
     access_token: !secret twitter_access_token
     access_token_secret: !secret twitter_access_token_secret
 
+### Building out some Historical stats for tweeting. #####################
+sensor:
+  - platform: history_stats
+    name: Living Room TV
+    entity_id: media_player.living_room_ultra
+    state: 'playing'
+    type: time
+    end: '{{ now() }}'
+    duration:
+      hours: 24
+
+  - platform: history_stats
+    name: Doorbell Presses
+    entity_id: binary_sensor.skybell_stone_door_button
+    state: 'on'
+    type: time
+    end: '{{ now() }}'
+    duration:
+      hours: 24
+
+#############################################################
+
 automation:
   - alias: 'New Twitter follower!'
     hide_entity: True

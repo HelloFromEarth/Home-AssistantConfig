@@ -173,6 +173,9 @@ history:
       - switch
       - media_player
       - light
+      - binary_sensor
+      - cover
+
   exclude:
     entities:
      - sensor.last_boot
