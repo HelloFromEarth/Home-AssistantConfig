@@ -73,11 +73,11 @@ notify:
       - service: ios_staceys_iphone
       - service: ios_carlo_6s
 
-discovery:
-  ignore:
-   - samsung_tv
-#   - roku
-   - google_cast
+# discovery:
+#   ignore:
+#    - samsung_tv
+# #   - roku
+#    - google_cast
 
 updater:
   include_used_components: true
