@@ -45,3 +45,20 @@ automation:
         data_template:
           value1: "Your current fitbit steps are {{ states('sensor.steps') }} - You probably do not have it."
           who: 'carlo'
+
+  - alias: 'Fitbit 10k'
+    initial_state: 'on'
+    trigger:
+      - platform: numeric_state
+        entity_id: sensor.steps
+        above: 10000
+
+    action:
+      - service: script.tweet_engine
+        data_template:
+          tweet: >
+            {{ [
+            "Somebody just hit {{ states('sensor.steps') }} steps on the #Fitbit!",
+            "Keep on moving.  Somebody just hit {{ states('sensor.steps') }} steps.",
+            "#Fitness Tracking at home BY the home. Somebody just hit {{ states('sensor.steps') }} steps"
+            ] | random + " Battery Level:{{ states('sensor.one_battery') }} #Self #Data"}}
