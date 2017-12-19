@@ -13,18 +13,18 @@ You can also vist my [Blog](http://www.vmwareinfo.com/search/label/iot) for all 
 <a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/3MkgeKFUVKPNW45Vtwu9Abd4/CCOSTAN/Home-AssistantConfig'>
   <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/3MkgeKFUVKPNW45Vtwu9Abd4/CCOSTAN/Home-AssistantConfig.svg' />
 </a>
-Original work by @beed2112
-Modified by [@CCOSTAN](https://twitter.com/ccostan
-Repo : https://github.com/CCOSTAN/Home-AssistantConfig
-Repo : https://github.com/beed2112/condo 
-** This is a map of the script references from my repo. **
-/home/hass/.homeassistant/script/amp_settings.yaml 
+Original work by @beed2112 /n
+Modified by [@CCOSTAN](https://twitter.com/ccostan) /n
+Repo : https://github.com/CCOSTAN/Home-AssistantConfig /n
+Repo : https://github.com/beed2112/condo /n
+**This is a map of the script references from my repo.** /n
+ https://github.com/CCOSTAN/Home-AssistantConfig/blob/masterscript/amp_settings.yaml 
   
 amp_settings 
  https://github.com/CCOSTAN/Home-AssistantConfig/blob/master/automation/System/door_chime.yaml:    - service: script.amp_settings  
  
   
-/home/hass/.homeassistant/script/dog_bark.yaml 
+ https://github.com/CCOSTAN/Home-AssistantConfig/blob/masterscript/dog_bark.yaml 
   
 dog_bark 
  https://github.com/CCOSTAN/Home-AssistantConfig/blob/master/customize/scripts.yaml:script.dog_bark:
@@ -33,7 +33,7 @@ dog_bark
  https://github.com/CCOSTAN/Home-AssistantConfig/blob/master/automation/guard_dog.yaml:    - service: script.dog_bark  
  
   
-/home/hass/.homeassistant/script/emergency.yaml 
+ https://github.com/CCOSTAN/Home-AssistantConfig/blob/masterscript/emergency.yaml 
   
 emergency 
  https://github.com/CCOSTAN/Home-AssistantConfig/blob/master/script/emergency.yaml:#   - service: script.emergency
@@ -41,7 +41,7 @@ emergency
  https://github.com/CCOSTAN/Home-AssistantConfig/blob/master/automation/Speech/High_Wind_Speed_Check.yaml:    - service: script.emergency  
  
   
-/home/hass/.homeassistant/script/flash_notify.yaml 
+ https://github.com/CCOSTAN/Home-AssistantConfig/blob/masterscript/flash_notify.yaml 
   
 flash_notify 
  https://github.com/CCOSTAN/Home-AssistantConfig/blob/master/customize/scripts.yaml:script.flash_notify:
@@ -50,7 +50,7 @@ flash_notify
  https://github.com/CCOSTAN/Home-AssistantConfig/blob/master/automation/ifttt_calendar.yaml:    - service: script.flash_notify  
  
   
-/home/hass/.homeassistant/script/front_house_motion.yaml 
+ https://github.com/CCOSTAN/Home-AssistantConfig/blob/masterscript/front_house_motion.yaml 
   
 front_house_motion 
  https://github.com/CCOSTAN/Home-AssistantConfig/blob/master/customize/scripts.yaml:script.front_house_motion:
@@ -58,7 +58,7 @@ front_house_motion
  https://github.com/CCOSTAN/Home-AssistantConfig/blob/master/packages/skybellhd.yaml:      - service: script.front_house_motion  
  
   
-/home/hass/.homeassistant/script/interior_off.yaml 
+ https://github.com/CCOSTAN/Home-AssistantConfig/blob/masterscript/interior_off.yaml 
   
 interior_off 
  https://github.com/CCOSTAN/Home-AssistantConfig/blob/master/customize/scripts.yaml:script.interior_off:
@@ -68,7 +68,7 @@ interior_off
  https://github.com/CCOSTAN/Home-AssistantConfig/blob/master/automation/Timed_Triggers/sunrise_turn_off.yaml:    - service: script.interior_off  
  
   
-/home/hass/.homeassistant/script/monthly_color_scene.yaml 
+ https://github.com/CCOSTAN/Home-AssistantConfig/blob/masterscript/monthly_color_scene.yaml 
   
 monthly_color_scene 
  https://github.com/CCOSTAN/Home-AssistantConfig/blob/master/customize/scripts.yaml:script.monthly_color_scene:
@@ -78,7 +78,7 @@ monthly_color_scene
  https://github.com/CCOSTAN/Home-AssistantConfig/blob/master/automation/Timed_Triggers/sunset_turn_on.yaml:    - service: script.monthly_color_scene  
  
   
-/home/hass/.homeassistant/script/notify_engine.yaml 
+ https://github.com/CCOSTAN/Home-AssistantConfig/blob/masterscript/notify_engine.yaml 
   
 notify_engine 
  https://github.com/CCOSTAN/Home-AssistantConfig/blob/master/customize/scripts.yaml:script.notify_engine:
@@ -111,7 +111,7 @@ notify_engine
  https://github.com/CCOSTAN/Home-AssistantConfig/blob/master/automation/Timed_Triggers/startup_notification.yaml:    - service: script.notify_engine  
  
   
-/home/hass/.homeassistant/script/skybell_pressed.yaml 
+ https://github.com/CCOSTAN/Home-AssistantConfig/blob/masterscript/skybell_pressed.yaml 
   
 skybell_pressed 
  https://github.com/CCOSTAN/Home-AssistantConfig/blob/master/customize/scripts.yaml:script.skybell_pressed:
@@ -119,7 +119,7 @@ skybell_pressed
  https://github.com/CCOSTAN/Home-AssistantConfig/blob/master/packages/skybellhd.yaml:      - service: script.skybell_pressed  
  
   
-/home/hass/.homeassistant/script/speech_engine.yaml 
+ https://github.com/CCOSTAN/Home-AssistantConfig/blob/masterscript/speech_engine.yaml 
   
 speech_engine 
  https://github.com/CCOSTAN/Home-AssistantConfig/blob/master/customize/scripts.yaml:script.speech_engine:
@@ -150,14 +150,14 @@ speech_engine
  https://github.com/CCOSTAN/Home-AssistantConfig/blob/master/automation/Timed_Triggers/2200.yaml:    - service: script.speech_engine  
  
   
-/home/hass/.homeassistant/script/speech_processing.yaml 
+ https://github.com/CCOSTAN/Home-AssistantConfig/blob/masterscript/speech_processing.yaml 
   
 speech_processing 
  https://github.com/CCOSTAN/Home-AssistantConfig/blob/master/customize/scripts.yaml:script.speech_processing:
  https://github.com/CCOSTAN/Home-AssistantConfig/blob/master/script/speech_engine.yaml:    - service: script.speech_processing  
  
   
-/home/hass/.homeassistant/script/switch_turn_off_all.yaml 
+ https://github.com/CCOSTAN/Home-AssistantConfig/blob/masterscript/switch_turn_off_all.yaml 
   
 switch_turn_off_all 
  https://github.com/CCOSTAN/Home-AssistantConfig/blob/master/customize/scripts.yaml:script.switch_turn_off_all:
@@ -165,7 +165,7 @@ switch_turn_off_all
  https://github.com/CCOSTAN/Home-AssistantConfig/blob/master/script/switch_turn_off_all.yaml:#   - service: script.switch_turn_off_all  
  
   
-/home/hass/.homeassistant/script/tweet.yaml 
+ https://github.com/CCOSTAN/Home-AssistantConfig/blob/masterscript/tweet.yaml 
   
 tweet_engine 
  https://github.com/CCOSTAN/Home-AssistantConfig/blob/master/packages/logger.yaml:      - service: script.tweet_engine
