@@ -13,7 +13,6 @@
     - service: homeassistant.turn_off
       entity_id:
         - group.landscaping
-
     - service: script.tweet_engine
       data_template:
         tweet: >

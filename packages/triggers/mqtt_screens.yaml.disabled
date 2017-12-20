@@ -11,6 +11,7 @@ homeassistant:
       emulated_hue_hidden: False
       hidden: False
       homebridge_hidden: False
+
 #-------------------------------------------
 switch:
   - platform: mqtt

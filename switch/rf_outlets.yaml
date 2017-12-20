@@ -93,7 +93,7 @@
       pulselength: 186
       code_on: 5330691
       code_off: 5330700
-      signal_repetitions: 40
+      signal_repetitions: 50
 
 # Outlet_304_4
     Garage_Outlet:

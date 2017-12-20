@@ -117,10 +117,3 @@ switch.pihole_temp_disable:
   emulated_hue_hidden: True
   hidden: False
   homebridge_hidden: true
-
-switch.computer_screens:
-  friendly_name: 'Computer Screens'
-  emulated_hue_hidden: False
-  hidden: False
-  homebridge_hidden: False
-  icon: mdi:monitor-multiple

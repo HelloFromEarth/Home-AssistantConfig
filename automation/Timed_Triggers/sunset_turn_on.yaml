@@ -12,11 +12,6 @@
       from: 'above_horizon'
 
   action:
-    - service: light.turn_on
-      data:
-        entity_id:
-          - light.outdoor_bathroom
-        brightness: 35
     - service: script.tweet_engine
       data_template:
         tweet: >
@@ -39,6 +34,11 @@
       entity_id:
         - switch.front_landscaping
     - service: script.monthly_color_scene
+    - service: light.turn_on
+      data:
+        entity_id:
+          - light.outdoor_bathroom
+        brightness: 35
 
     - wait_template: >-
        {{ states.group.family.state == 'home' }}
