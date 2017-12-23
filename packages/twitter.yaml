@@ -69,12 +69,14 @@ automation:
             {% set location = trigger.event.data.location %}
             {% set phrases = [
               "Thanks for the Follow " ~ handle ~ "! Chirp the Bird from " ~ location ~ "!!",
-              "I have a new follower (" ~ handle ~ "), I just sounded a chirp in the house.",
-              "Boom! The " ~ handle ~ " follow makes me sound a chirp in the house all the way from " ~ location ~ ".",
+              "New follower " ~ handle ~ " from " ~ location ~ ", I just sounded a chirp in the house.",
+              "Boom! The " ~ location ~ " follow from " ~ handle ~ " makes me sound a chirp in the house.",
+              "Wanna know who is super cool? "~ handle ~" IS!!! Thanks for making me CHIRP!",
               "If the AMP (http://amzn.to/2j18dlT) is on & I get a new follower like " ~ handle ~ ", I sound a chirp!"
             ] %}
             {% set hashtags = [
               "#ThanksForTheFollow",
+              "#FollowMe",
               "#MakingitChirp",
               "(http://www.vmwareinfo.com/2017/11/building-digital-cuckoo-clock-with-home.html)"
             ] %}

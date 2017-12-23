@@ -13,15 +13,6 @@
     - condition: state
       entity_id: group.family
       state: 'home'
-    - condition: time
-      after: '09:30:00'
-    - condition: template
-      value_template: >
-        {% if is_state('media_player.livingroomCC', 'playing') %}
-          false
-        {% else %}
-          true
-        {% endif %}
 
   action:
     - service: script.amp_settings
