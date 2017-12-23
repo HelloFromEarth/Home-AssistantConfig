@@ -82,3 +82,8 @@ script.speech_engine:
   friendly_name: 'Voice Notify'
   emulated_hue_hidden: True
   hidden: True
+
+script.tweet_engine:
+  friendly_name: 'Tweet Notify'
+  emulated_hue_hidden: True
+  hidden: True
